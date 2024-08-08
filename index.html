@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Envíos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="Q0t0.gif" alt="Logo de la Empresa" class="logo">
+        </div>
+        <h1>Gestión de Envíos de Mercancías</h1>
+        <div class="form-container">
+            <form id="envioForm">
+                <label for="numeroSeguimiento">Número de Seguimiento:</label>
+                <input type="text" id="numeroSeguimiento" name="numeroSeguimiento" required>
+                
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" name="origen" required>
+                
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+                
+                <label for="fechaEntrega">Fecha de Entrega Prevista:</label>
+                <input type="date" id="fechaEntrega" name="fechaEntrega" required>
+                
+                <button type="submit">Agregar Envío</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Lista de Envíos</h2>
+            <table id="enviosTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Número de Seguimiento</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha de Entrega</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los envíos se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
